@@ -76,3 +76,9 @@ h2 {
 label[for="weight"] {
   margin-top: 1rem;
 }
+
+@media (width < 320px) {
+    form{
+        width: 16rem ;
+    }
+}
