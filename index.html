@@ -8,15 +8,18 @@
 </head>
 <body>
     <main>
-        <div id="form">
+        <form>
             <h2>BMI calculator</h2>
             <input type="number" readonly placeholder="Result">
             <label for="weight">Input weight:</label><br>
             <input type="text" id="weight" name="weight" placeholder="weight"><br>
             <label for="lname">Input height:</label><br>
             <input type="text" id="height" name="height" placeholder="height"><br><br>
-            <input type="submit" value="Calculate" calculate-btn>
-        </div>
+            <div>
+                <input type="button" value="Calculate" calculate-btn>
+                <input type="reset" value="Reset">
+            </div>
+        </form>
     </main>
     <script src="script/script.js"></script>
 </body>

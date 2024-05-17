@@ -10,6 +10,5 @@ allDomItems.calculateBtn.addEventListener('click', () => {
     let height = allDomItems.heightInput.value
 
     const calculate = parseFloat(weight / height**2).toFixed(2)
-    console.log(calculate)
     allDomItems.screen.value = `${calculate}`
 })
