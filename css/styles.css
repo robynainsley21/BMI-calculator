@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #54BAB9;
+    --button: #E9DAC1;
+    --bg-light: #FBF8F1;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light);
+    height: 100vh;
+}
+
+input[type="submit"]{
+    background-color: var(--button);
+    border-radius: .6rem;
+    border: 1px solid ;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary);
+    padding: 3rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+h2{
+    margin-bottom: 1rem ;
+}
+
+input{
+    padding: .4rem;
+}
