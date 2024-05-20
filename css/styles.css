@@ -7,9 +7,10 @@
 }
 
 :root {
-  --primary: #54bab9;
-  --button: #e9dac1;
-  --bg-light: #fbf8f1;
+  --primary: #f7d060;
+  --button: #ff6d60;
+  --light: #f3e99f;
+  --bg: #98d8aa;
   --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -18,17 +19,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-light);
+  background-color: var(--bg);
   height: 100vh;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 :is(input[type="button"], input[type="reset"]) {
   background-color: var(--button);
   border-radius: 0.6rem;
-  border: 1px solid var(--button);
+  border: 1px solid;
   font-weight: bold;
-
+  color: #fff;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -47,6 +49,10 @@ body {
   &:active {
     top: 2px;
   }
+
+  &:hover{
+    transform: scale(1.08);
+  }
 }
 
 input[readonly] {
@@ -54,7 +60,7 @@ input[readonly] {
 }
 
 input {
-  border: 1px solid var(--button);
+  border: 1px solid var(--light);
   box-shadow: var(--box-shadow);
   border-radius: 5px;
   padding: 0.4rem;
@@ -65,8 +71,10 @@ form {
   flex-direction: column;
   background-color: var(--primary);
   padding: 3rem;
-  border: 1px solid;
+  border: 1px solid var(--primary);
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 h2 {
@@ -78,7 +86,7 @@ label[for="weight"] {
 }
 
 @media (width < 320px) {
-    form{
-        width: 16rem ;
-    }
+  form {
+    width: 16rem;
+  }
 }
