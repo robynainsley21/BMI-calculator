@@ -85,6 +85,19 @@ label[for="weight"] {
   margin-top: 1rem;
 }
 
+/* changed with javascript */
+.error{
+  color: red;
+}
+
+.good{
+  color: green;
+}
+
+.regular{
+  color: #000;
+}
+
 @media (width < 320px) {
   form {
     width: 16rem;
